@@ -2,7 +2,7 @@
 var step = 1; // visible frame
 var targetStep = 1; // frame to animate to
 var images = new Array; // stores all of the frames for quick access
-var totalFrames = 99; // the number of images in the sequence of JPEG files (this could be calculated server-side by scanning the frames folder)
+var totalFrames = 101; // the number of images in the sequence of JPEG files (this could be calculated server-side by scanning the frames folder)
 
 window.requestAnimFrame = (function(){ // reduce CPU consumption, improve performance and make this possible
   return  window.requestAnimationFrame       || 

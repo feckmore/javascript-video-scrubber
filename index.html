@@ -6,33 +6,22 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 	<script src="./js/javascript-video-scrubber.js" type="text/javascript"></script>
 	<link type="text/css" rel="stylesheet" href="./styles.css" />
-	<script type="text/javascript">
-		<!--//
-
-		totalFrames = 99; // the number of images in the sequence of JPEG files (this could be calculated server-side by scanning the frames folder)
-
-		$(document).ready(function() {
-			// resizeAdjustments(); // adjust the size of video placeholder image to fit the screen and keep aspect ratio (zoom crop)
-		});
-
-		//-->
-	</script>
 </head>
 <body>
-
+	<br>
 	<input id="range-slider" class="slider" type="range" min="0" max="100" value="0">
 	<br><br>
 
 	<!-- placeholder image for video (required) -->
-	<img id="video" src="./frames/image_000000.jpg" alt="" />
+	<img id="video" src="./frames/shoulder/scar-total-shoulder-m-000.jpg" alt="" />
 	
 	<!-- preload the video frames (required) -->
 	<script type="text/javascript">
 		<!--//
-		// image filenames in frames folder should be "image_000000.jpg" through "image_000098.jpg"
+		// image filenames in frames folder should be "image-000.jpg" through "image-098.jpg"
 		for(i = 0; i < totalFrames; i++) { // loop for each image in sequence
 			images[i] =  new Image(); // add image object to array
-			images[i].src = "./frames/image_"+pad(i, 6)+".jpg"; // set the source of the image object
+			images[i].src = "./frames/shoulder/scar-total-shoulder-m-"+pad(i, 3)+".jpg"; // set the source of the image object
 		}
 		//-->
 	</script>
